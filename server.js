@@ -5,7 +5,8 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 
-const port = 5000;
+const port = process.env.PORT || 5000;
+
 
 const pexelsApiKey = process.env.PEXELS_API_KEY;
 const unsplashAccessKey = process.env.UNSPLASH_ACCESS_KEY;
